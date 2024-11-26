@@ -1,0 +1,28 @@
+// header, nav, main {
+//     // max-width: 995px;
+//     // margin: auto;
+// }
+
+/* NAVIGATION STUFF GOES HERE  */
+#hamburgerBtn {
+    display: none;
+}
+.moveover>.content {
+    transform: translateX(0px);
+}
+nav {
+    background-color: transparent;
+    position: static;
+    transform: translateX(0);
+    width: auto;
+    ul{
+        display: flex;
+        margin-left: $gutter;
+    }
+    ul li a {
+        padding: .6rem 1.5rem;
+        border: none;
+    }
+}
+
+

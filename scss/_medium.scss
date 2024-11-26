@@ -1,0 +1,43 @@
+/* NAVIGATION STUFF GOES HERE  */
+#hamburgerBtn {
+    display: none;
+}
+.moveover>.content {
+    transform: translateX(0px);
+}
+nav {
+    background-color: transparent;
+    position: static;
+    transform: translateX(0);
+    width: auto;
+    // border-bottom: 2px solid #3B1C32;
+    ul{
+        display: flex;
+        margin-left: $gutter; 
+    }
+    ul li a {
+        padding: .6rem 1.5rem;
+        border: none;
+    }
+    ul li a:hover {
+        background-color: #c9b5c3;
+        color: #FFFFF9;
+    }
+    li.active a {
+        color: black;
+    }
+}
+#navWrapper {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 10px -5px rgba(255, 255, 255, 0.4);
+}
+
+/*---------  CARDS ---------*/
+.allCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.allCards .flip-card {
+    margin: 15px;
+}

@@ -1,0 +1,210 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  Apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} // end all elements
+
+
+/* --------------------------- BODY --------------------------- */
+body {
+    font-family: $defaultFont;
+    font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+
+.sticky {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #EAEAEA;
+    z-index: 100;
+}
+
+#headerWrapper {
+    max-width: 1300px;
+    margin: auto;
+}
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    column-gap: $gutter;
+    align-items: center;
+    padding: .5rem $gutter;
+    span {
+        font-size: 2.5rem;
+        font-family: "Bokor", system-ui;
+        color: black;
+        padding: 20px;
+    }
+} // end header
+
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+#navWrapper {
+    max-width: 1300px;
+    margin: auto;
+   
+}
+#hamburgerBtn {
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: black;
+    &:before {
+        content: "\2630"
+    }
+}
+nav {
+    background-color: #3B1C32;
+    width: 180px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    ul li a {
+        display: block;
+        padding: .9rem .5rem;
+        text-align: right;
+        border-bottom: 1px rgba(0,0,0,0.25) solid;
+        text-decoration: none;
+        color: #a79494;
+        font-family: 'Spline Sans', sans-serif;
+        font-weight: 400;
+    }
+    ul li a:hover {
+        background-color: rgba(0,0,0,0.1);
+    }
+    li.active a {
+        color: #FFFFF9;
+    }
+} //end of nav
+.moveover #hamburgerBtn::before {
+    content: "\2715";
+}
+.moveover>.content {
+    transform: translateX(-180px); 
+    transition: transform 500ms ease; 
+}
+// #pageWrapper {
+//     // position: relative;
+//     // overflow-x: hidden;
+// }
+
+/* --------------------------- MAIN --------------------------- */
+main {
+    section#websites {
+        background-color: #8ba0a4;
+        // height: 100vh;
+        padding:50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    section#websites h1 {
+        font-size: 1.6rem;
+    }
+    section#websites h2 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+}// end main
+
+
+/* --------------------------- FLIP CARDS --------------------------- */
+.allCards {
+    max-width: 1300px;
+    margin: auto;
+}
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    margin: 15px auto;
+    display: block;
+    // margin: 0 auto;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: #bbb;
+    // color: $whiteColor;
+  }
+  .flip-card-back {
+    background-color: $accentColor;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .cardText {
+    color: white;
+  }
+/* --------------------------- BUTTONS ON CARDS --------------------------- */
+  .btnPrice {
+    background-color: #fcd494;   
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    color: #000;
+    border-radius: 8px; 
+    border-color: #fcd494;
+    cursor: pointer;
+}
+.btnPrice:hover {
+    transform: translateY(5px);
+    transition: transform .20s ease-in-out;
+}
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+    background-color: #3B1C32;
+    margin-top: 30px;
+} // end footer wrapper
+
+footer {
+    font-size: .85rem;
+    padding: 1rem $gutter;
+    color: #f2f2f2;
+    text-align: center;
+    line-height: $leading;
+    font-family: 'Spline Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    a {color: #f2f2f2;}
+}// end footer
