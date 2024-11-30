@@ -11,18 +11,10 @@
     transform: translateX(0px);
 }
 nav {
-    background-color: transparent;
+    background-color: #EAEAEA;
     position: static;
     transform: translateX(0);
     width: auto;
-    ul{
-        display: flex;
-        margin-left: $gutter;
-    }
-    ul li a {
-        padding: .6rem 1.5rem;
-        border: none;
-    }
 }
 
 

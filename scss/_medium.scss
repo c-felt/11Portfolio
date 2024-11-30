@@ -2,34 +2,33 @@
 #hamburgerBtn {
     display: none;
 }
-.moveover>.content {
-    transform: translateX(0px);
-}
+// .moveover>.content {
+//     transform: translateX(0px);
+// }
 nav {
-    background-color: transparent;
+    background-color: lighten($menuColor, 10%);
     position: static;
     transform: translateX(0);
     width: auto;
-    // border-bottom: 2px solid #3B1C32;
+    margin: 0;
     ul{
         display: flex;
-        margin-left: $gutter; 
+        // margin-left: $gutter;
+        margin: 0;
+        padding: 0;
+
     }
     ul li a {
         padding: .6rem 1.5rem;
         border: none;
     }
     ul li a:hover {
-        background-color: #c9b5c3;
+        background-color: lighten($menuColor, 20%);
         color: #FFFFF9;
     }
-    li.active a {
-        color: black;
+    li.active {
+        background-color: darken($menuColor, 10%);
     }
-}
-#navWrapper {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 10px -5px rgba(255, 255, 255, 0.4);
 }
 
 /*---------  CARDS ---------*/

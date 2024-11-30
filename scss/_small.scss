@@ -52,7 +52,7 @@ header {
 #navWrapper {
     max-width: 1300px;
     margin: auto;
-   
+ 
 }
 #hamburgerBtn {
     width: 44px;
@@ -79,21 +79,23 @@ nav {
         padding: 0;
         margin: 0;
     }
-    ul li a {
+    a {
         display: block;
-        padding: .9rem .5rem;
+        padding: .9rem;
         text-align: right;
         border-bottom: 1px rgba(0,0,0,0.25) solid;
         text-decoration: none;
         color: #a79494;
         font-family: 'Spline Sans', sans-serif;
         font-weight: 400;
+        img{width: 25px;}
+        span{display: none;}
+        a:hover {
+            background-color: lighten($menuColor, 10%);
+        }
     }
-    ul li a:hover {
-        background-color: rgba(0,0,0,0.1);
-    }
-    li.active a {
-        color: #FFFFF9;
+    li .active {
+        background-color: darken($menuColor, 10%);
     }
 } //end of nav
 .moveover #hamburgerBtn::before {
@@ -110,6 +112,27 @@ nav {
 
 /* --------------------------- MAIN --------------------------- */
 main {
+    section {
+        height: 100vh;
+    }
+    section#about {
+        background-color: #8ba0a4;
+        height: 100vh;
+        padding:50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    section#about h1 {
+        font-size: 2.5rem;
+        color: var(--primaryColor);
+    }
+    section#about h2 {
+        font-size: 1.5rem;
+        color: var(--primaryColor);
+        margin: 0;
+    }
     section#websites {
         background-color: #8ba0a4;
         // height: 100vh;
@@ -127,7 +150,22 @@ main {
         margin: 0;
     }
 }// end main
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
 
+#backToTop:hover {
+    background-color: #0056b3;
+}
 
 /* --------------------------- FLIP CARDS --------------------------- */
 .allCards {

@@ -31,7 +31,7 @@
                 <div id="headerWrapper">
                     <header>
                         <img src="images/logo1x.png" alt="logo">
-                        <span>Claire Felt</span>
+                        <span id="#top">Claire Felt</span>
                         <button id="hamburgerBtn"></button>
                     </header>
                 </div><!-- end header wrapper -->
@@ -39,11 +39,11 @@
                 <div id="navWrapper">
                     <nav>
                         <ul>
-                            <li><a href="#websites">Projects</a></li>
-                            <li><a href="#">Packages</a></li>
-                            <li class="active"><a href="index.html">Locations</a></li>
-                            <li><a href="#">Deals</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li class="active"><a href="#about"><img src="images/user-solid.svg"><span>About Me</span></a></li>
+                            <li><a href="#websites"><img src="images/code-branch-solid.svg"><span>Projects</span></a></li>
+                            <li><a href="#education"><img src="images/graduation-cap-solid.svg"><span>My Education</span></a></li>
+                            <li><a href="#goals"><img src="images/square-check-solid.svg"><span>My Career Goals</span></a></li>
+                            <li><a href="#contact"><img src="images/address-book-solid.svg"><span>Contact Information</span></a></li>
                         </ul>
                     </nav>
                 </div> <!-- end nav wrapper -->
@@ -51,128 +51,154 @@
 
             <div id="mainWrapper">
                 <main>
+                    <section id="about">
+                        <h1>Claire Felt</h1>
+                        <h2>An aspiring web developer learning JS</h2>
+                    </section>
+
                     <section id="websites">
-                    <h1>Past Projects</h1>
-                    <div class="allCards">
-                        
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/Mercedes-BenzG-Class.jpg" alt="Avatar" style="width:300px;height:300px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 class="cardText">Mercedes-Benz G-Class</h1>  
-                                <p class="cardText">The Mercedes-Benz G-Class is a luxury SUV with iconic design and powerful off-road capability, perfect for adventure and style.</p>
-                                <button class="btnPrice">Learn More</button>
-                            </div>
-                            </div>
-                        </div>
-                    
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/Lambo.jpg" alt="Avatar" style="width:300px;height:300px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 class="cardText">Lamborghini Aventador Roadster</h1> 
-                                <p class="cardText">The Lamborghini Aventador Roadster delivers thrilling open-air performance with striking Italian design and unparalleled speed.</p>
-                                <button class="btnPrice">Learn More</button>
-                            </div>
-                            </div>
-                        </div>
-                
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/bently.jpg" alt="Avatar" style="width:300px;height:300px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1 class="cardText">Bentley Mulsanne</h1> 
-                                <p class="cardText">The Bentley Mulsanne defines British luxury, combining masterful craftsmanship and a commanding, serene drive.</p>
-                                <button class="btnPrice">Learn More</button>
-                            </div>
-                            </div>
-                        </div>
+                        <h1>Past Projects</h1>
+                        <div class="allCards">
 
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/bently.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/Mercedes-BenzG-Class.jpg" alt="Avatar"
+                                            style="width:300px;height:300px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1 class="cardText">Mercedes-Benz G-Class</h1>
+                                        <p class="cardText">The Mercedes-Benz G-Class is a luxury SUV with iconic design
+                                            and powerful off-road capability, perfect for adventure and style.</p>
+                                        <button class="btnPrice">Learn More</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flip-card-back">
-                                <h1 class="cardText">Bentley Mulsanne</h1> 
-                                <p class="cardText">The Bentley Mulsanne defines British luxury, combining masterful craftsmanship and a commanding, serene drive.</p>
-                                <button class="btnPrice">Learn More</button>
-                            </div>
-                            </div>
-                        </div>
 
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/bently.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/Lambo.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1 class="cardText">Lamborghini Aventador Roadster</h1>
+                                        <p class="cardText">The Lamborghini Aventador Roadster delivers thrilling
+                                            open-air performance with striking Italian design and unparalleled speed.
+                                        </p>
+                                        <button class="btnPrice">Learn More</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flip-card-back">
-                                <h1 class="cardText">Bentley Mulsanne</h1> 
-                                <p class="cardText">The Bentley Mulsanne defines British luxury, combining masterful craftsmanship and a commanding, serene drive.</p>
-                                <button class="btnPrice">Learn More</button>
-                            </div>
-                            </div>
-                        </div>
 
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/bently.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/bently.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1 class="cardText">Bentley Mulsanne</h1>
+                                        <p class="cardText">The Bentley Mulsanne defines British luxury, combining
+                                            masterful craftsmanship and a commanding, serene drive.</p>
+                                        <button class="btnPrice">Learn More</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flip-card-back">
-                                <h1 class="cardText">Bentley Mulsanne</h1> 
-                                <p class="cardText">The Bentley Mulsanne defines British luxury, combining masterful craftsmanship and a commanding, serene drive.</p>
-                                <button class="btnPrice">Learn More</button>
-                            </div>
-                            </div>
-                        </div>
 
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/bently.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/bently.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1 class="cardText">Bentley Mulsanne</h1>
+                                        <p class="cardText">The Bentley Mulsanne defines British luxury, combining
+                                            masterful craftsmanship and a commanding, serene drive.</p>
+                                        <button class="btnPrice">Learn More</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flip-card-back">
-                                <h1 class="cardText">Bentley Mulsanne</h1> 
-                                <p class="cardText">The Bentley Mulsanne defines British luxury, combining masterful craftsmanship and a commanding, serene drive.</p>
-                                <button class="btnPrice">Learn More</button>
-                            </div>
-                            </div>
-                        </div>
 
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/bently.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/bently.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1 class="cardText">Bentley Mulsanne</h1>
+                                        <p class="cardText">The Bentley Mulsanne defines British luxury, combining
+                                            masterful craftsmanship and a commanding, serene drive.</p>
+                                        <button class="btnPrice">Learn More</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flip-card-back">
-                                <h1 class="cardText">Bentley Mulsanne</h1> 
-                                <p class="cardText">The Bentley Mulsanne defines British luxury, combining masterful craftsmanship and a commanding, serene drive.</p>
-                                <button class="btnPrice"><a href="https://c-felt.github.io/08TechnologyConference/" target="_blank">Learn More</a></button>
+
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/bently.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1 class="cardText">Bentley Mulsanne</h1>
+                                        <p class="cardText">The Bentley Mulsanne defines British luxury, combining
+                                            masterful craftsmanship and a commanding, serene drive.</p>
+                                        <button class="btnPrice">Learn More</button>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/bently.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1 class="cardText">Bentley Mulsanne</h1>
+                                        <p class="cardText">The Bentley Mulsanne defines British luxury, combining
+                                            masterful craftsmanship and a commanding, serene drive.</p>
+                                        <button class="btnPrice">Learn More</button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        </section>
-                        
-                    </div>
-                
+
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/bently.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1 class="cardText">Bentley Mulsanne</h1>
+                                        <p class="cardText">The Bentley Mulsanne defines British luxury, combining
+                                            masterful craftsmanship and a commanding, serene drive.</p>
+                                        <button class="btnPrice"><a
+                                                href="https://c-felt.github.io/08TechnologyConference/"
+                                                target="_blank">Learn More</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                    <section id="education">
+                        <h1>Education</h1>
+                    </section>
+                    <section id="goals">
+                        <h1>Career Goals</h1>
+                    </section>
+                    <section id="contact">
+                        <h1>My Contacts</h1>
+                    </section>
                 </main>
-            </div><!-- end main wrapper -->
+            </div>
+            
+        </div><!-- end main wrapper -->
+        <button id="backToTop" style="display:none;">Back to Top</button>
 
-            <div id="footerWrapper">
-                <footer>
-                    <p>Copyright &copy; Gothic Getaways Inc. All rights reserved. &bull; <span id="year">x</span> &bull;
-                        <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a>
-                    </p>
-                </footer>
-            </div> <!-- end footer wrapper -->
-        </div>
+        <div id="footerWrapper">
+            <footer>
+                <p>Copyright &copy; Gothic Getaways Inc. All rights reserved. &bull; <span id="year">x</span> &bull;
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a>
+                </p>
+            </footer>
+        </div> <!-- end footer wrapper -->
+    </div>
     </div>
     <script src="js/scripts.js" type="module"></script>
 </body>
@@ -180,3 +206,4 @@
 </html>
 
 <!-- ok, the next thing to do is add all the other sections, link them to the nav bar links, fix the button sizes, add urls to all the buttons and style everything. You could also add drop down meny items? Maybe an image slider with the websites youve built? Orrr put the slider inside of the flip card?? maybe find a way to overlay text on an img in the slider card. Also I would add a name page/section just cuz thats whats on cheneys thing. Also, section: name page, projects, education, contact and education goals (maybe somewhere in all this you can also link back to you figma with website redesign stuff?)-->
+<!-- add a back to top button -->
